@@ -3,6 +3,7 @@ import { useGSAP } from "@gsap/react"
 import gsap from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 
+
 gsap.registerPlugin(ScrollTrigger)
 
 const ProjectHeading = () => {
@@ -25,14 +26,15 @@ const ProjectHeading = () => {
     }, [])
 
     return (
-        <section ref={sectionRef}>
+        <section ref={sectionRef} className=''>
             <div className="h-screen w-full flex items-center">
                 <h1
                     ref={textRef}
-                    className="text-[40vw] font-semibold tracking-tighter font-mono uppercase text-[#a6a6a6] whitespace-nowrap translate-x-96"
+                    className="text-[40vw] font-semibold tracking-tighter font-mono uppercase text-[#a6a6a6] whitespace-nowrap translate-x-96 absolute top-15"
                 >
                     projects
                 </h1>
+
             </div>
         </section>
     )
